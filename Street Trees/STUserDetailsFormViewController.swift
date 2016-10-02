@@ -114,6 +114,7 @@ class STContactDetailsFormViewController: UIViewController {
         }
         
         guard let safeAddress = self.address else {
+            //TODO: Remove fatal error once tested and working. Ticket #67.
             fatalError("An Address has not been passed.")
         }
         
